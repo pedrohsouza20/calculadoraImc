@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de IMC Online</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="CSS/style.css" />
+
+</head>
+<body>
+  <section class="calculadora-imc">
+    <div class="calculadora-imc-container">
+      <h1>O que é o IMC?</h1>
+      <p>O IMC(Índice de Massa Corporal / corpórea), é um dos meios utilizados pela área da saúde para, dentre outras coisas, ajudar a definir em que posição uma pessoa se encaixa em relação à sua composição física.</p>
+      <p>O cálculo de IMC é feito pegando o peso do indivíduo e dividindo o mesmo por sua altura ao quadrado, dado pela fórmula IMC=p/a²</p>
+      <table class="tabela-imc">
+        <thead>
+          <tr>
+            <td>IMC</td>
+            <td>Classificação</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td> ou igual 18.5</td>
+            <td>Abaixo do peso</td>
+          </tr>
+          <tr>
+            <td>18.5 - 24.9</td>
+            <td>Peso normal</td>
+          </tr>
+          <tr>
+            <td>25.0 - 29.9</td>
+            <td>Sobrepeso</td>
+          </tr>
+          <tr>
+            <td>30.0 - 34.9</td>
+            <td>Obesidade grau I</td>
+          </tr>
+          <tr>
+            <td>35.0 - 39.9</td>
+            <td>Obesidade grau II</td>
+          </tr>
+          <tr>
+            <td>> ou igual a 39.9</td>
+            <td>Obesidade grau III ou Mórbida</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <form class="calcule">
+        <h2>Calcule o seu IMC</h2>
+        <input type="number" placeholder="Seu Peso em KG" class="peso">
+        <input type="number" placeholder="Sua altura em M" class="altura">
+        <input type="submit" class="enviar" value="Calcular">
+        <label for="resultado">Seu IMC é igual a:</label>
+        <input type="text" name="resultado"  class="resultado">
+      </form>
+
+    </div>
+  </section>
+</body>
+<script src="script.js"></script>
+</html>
